@@ -4,7 +4,6 @@ chromeExtensions: &chromeExtensions
   - nkgllhigpcljnhoakjkgaieabnkmgdkb # Don't f*** with paste; Chrome Web Store
   - edibdbjcniadpccecjdfdjjppcpchdlm # I still don't care about cookies; Chrome Web Store
   - mnjggcdmjocbbbhaepdhchncahnbgone # SponsorBlock; Chrome Web Store
-  - jaadjnlkjnhohljficgoddcjmndjfdmi # Blank Tab; Chrome Web Store
   - ldpochfccmkkmhdbclfhpagapcfdljkj # Decentraleyes; Chrome Web Store
 
 # Brave extensions
@@ -13,7 +12,6 @@ braveExtensions: &braveExtensions
   - nkgllhigpcljnhoakjkgaieabnkmgdkb # Don't f*** with paste
   - edibdbjcniadpccecjdfdjjppcpchdlm # I still don't care about cookies
   - mnjggcdmjocbbbhaepdhchncahnbgone # SponsorBlock
-  - jaadjnlkjnhohljficgoddcjmndjfdmi # Blank Tab
   - ldpochfccmkkmhdbclfhpagapcfdljkj # Decentraleyes
 
 # https://chromeenterprise.google/policies/
@@ -128,7 +126,6 @@ edge: &edge
   BlockExternalExtensions: false
   ExtensionInstallForcelist:
   - kkacdgacpkediooahopgcbdahlpipheh # I still don't care about cookies; Edge Web Store
-  - ihknoknoahjhldmpdoajjdkfjhddgpcd # Blank Tab; Edge Web Store
   # Games
   GamerModeEnabled: false
   # Generative AI
