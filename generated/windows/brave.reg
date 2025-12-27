@@ -22,16 +22,17 @@ Windows Registry Editor Version 5.00
 "BackgroundModeEnabled"=dword:00000000
 "BrowserGuestModeEnabled"=dword:00000000
 "BrowserSignin"=dword:00000000
+"MetricsReportingEnabled"=dword:00000000
 "SafeBrowsingExtendedReportingEnabled"=dword:00000000
 "SyncDisabled"=dword:00000001
 "ShoppingListEnabled"=dword:00000000
 "PasswordLeakDetectionEnabled"=dword:00000000
 "PasswordSharingEnabled"=dword:00000000
 "RelatedWebsiteSetsEnabled"=dword:00000000
+"ExtensionManifestV2Availability"=dword:00000002
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\BraveSoftware\Brave\ExtensionInstallForcelist]
 "1"="nkgllhigpcljnhoakjkgaieabnkmgdkb"
 "2"="edibdbjcniadpccecjdfdjjppcpchdlm"
 "3"="mnjggcdmjocbbbhaepdhchncahnbgone"
-"4"="jaadjnlkjnhohljficgoddcjmndjfdmi"
-"5"="ldpochfccmkkmhdbclfhpagapcfdljkj"
+"4"="ldpochfccmkkmhdbclfhpagapcfdljkj"

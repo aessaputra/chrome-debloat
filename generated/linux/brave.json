@@ -20,17 +20,18 @@
   "BackgroundModeEnabled": false,
   "BrowserGuestModeEnabled": false,
   "BrowserSignin": 0,
+  "MetricsReportingEnabled": false,
   "SafeBrowsingExtendedReportingEnabled": false,
   "SyncDisabled": true,
   "ShoppingListEnabled": false,
   "PasswordLeakDetectionEnabled": false,
   "PasswordSharingEnabled": false,
   "RelatedWebsiteSetsEnabled": false,
+  "ExtensionManifestV2Availability": 2,
   "ExtensionInstallForcelist": [
     "nkgllhigpcljnhoakjkgaieabnkmgdkb",
     "edibdbjcniadpccecjdfdjjppcpchdlm",
     "mnjggcdmjocbbbhaepdhchncahnbgone",
-    "jaadjnlkjnhohljficgoddcjmndjfdmi",
     "ldpochfccmkkmhdbclfhpagapcfdljkj"
   ]
 }

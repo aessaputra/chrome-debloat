@@ -149,5 +149,4 @@ Windows Registry Editor Version 5.00
 "ExtensionManifestV2Availability"=dword:00000002
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge\ExtensionInstallForcelist]
-"1"="kkacdgacpkediooahopgcbdahlpipheh"
-"2"="ihknoknoahjhldmpdoajjdkfjhddgpcd"
+"1"="kkacdgacpkediooahopgcbdahlpipheh"

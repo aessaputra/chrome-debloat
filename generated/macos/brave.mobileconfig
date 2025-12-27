@@ -73,6 +73,8 @@
 			<false/>
 			<key>BrowserSignin</key>
 			<integer>0</integer>
+			<key>MetricsReportingEnabled</key>
+			<false/>
 			<key>SafeBrowsingExtendedReportingEnabled</key>
 			<false/>
 			<key>SyncDisabled</key>
@@ -85,12 +87,13 @@
 			<false/>
 			<key>RelatedWebsiteSetsEnabled</key>
 			<false/>
+			<key>ExtensionManifestV2Availability</key>
+			<integer>2</integer>
 			<key>ExtensionInstallForcelist</key>
 			<array>
 				<string>nkgllhigpcljnhoakjkgaieabnkmgdkb</string>
 				<string>edibdbjcniadpccecjdfdjjppcpchdlm</string>
 				<string>mnjggcdmjocbbbhaepdhchncahnbgone</string>
-				<string>jaadjnlkjnhohljficgoddcjmndjfdmi</string>
 				<string>ldpochfccmkkmhdbclfhpagapcfdljkj</string>
 			</array>
 		</dict>
