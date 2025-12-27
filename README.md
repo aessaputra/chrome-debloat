@@ -9,13 +9,10 @@ A tool to generate policies for Chromium-based browsers (Chrome, Brave, and Edge
 - Blocks promotional content and unnecessary UI elements
 - Maintains browser functionality while reducing resource usage
 - Pre-configures essential extensions:
-  - uBlock Origin
-  - Cookie AutoDelete
   - Don't f*** with paste
   - I still don't care about cookies
   - SponsorBlock
-  - BlockTube
-  - BlankTab
+  - Blank Tab
   - Decentraleyes
 
 ### Supported Browsers
@@ -68,8 +65,8 @@ If you want to customize the policies:
 ### Uninstalling Policies
 
 **Windows:**
-1.  Navigate to the [`uninstall/windows/`](./uninstall/) directory in this repository.
-2.  Run the `.reg` file corresponding to your browser (e.g., `uninstall_chrome.reg`). This will remove the registry keys added during installation.
+1.  Navigate to the [`uninstall/`](./uninstall/) directory in this repository.
+2.  Run the `.reg` file corresponding to your browser (e.g., `remove-chrome-policy.reg`). This will remove the registry keys added during installation.
 3.  Restart your browser or go to `chrome://policy` (or `edge://policy`, `brave://policy`) and click "Reload policies".
 
 **macOS:**
