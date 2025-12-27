@@ -1,14 +1,20 @@
 chromeExtensions: &chromeExtensions
   ExtensionManifestV2Availability: 2
   ExtensionInstallForcelist:
-  - cjpalhdlnbpafiamejdnhcphjbkeiagm # uBlock Origin; Chrome Web Store
-  - fhcgjolkccmbidfldomjliifgaodjagh # Cookie AutoDelete; Chrome Web Store
   - nkgllhigpcljnhoakjkgaieabnkmgdkb # Don't f*** with paste; Chrome Web Store
   - edibdbjcniadpccecjdfdjjppcpchdlm # I still don't care about cookies; Chrome Web Store
   - mnjggcdmjocbbbhaepdhchncahnbgone # SponsorBlock; Chrome Web Store
-  - bbeaicapbccfllodepmimpkgecanonai # BlockTube; Chrome Web Store
   - jaadjnlkjnhohljficgoddcjmndjfdmi # Blank Tab; Chrome Web Store
   - ldpochfccmkkmhdbclfhpagapcfdljkj # Decentraleyes; Chrome Web Store
+
+# Brave extensions
+braveExtensions: &braveExtensions
+  ExtensionInstallForcelist:
+  - nkgllhigpcljnhoakjkgaieabnkmgdkb # Don't f*** with paste
+  - edibdbjcniadpccecjdfdjjppcpchdlm # I still don't care about cookies
+  - mnjggcdmjocbbbhaepdhchncahnbgone # SponsorBlock
+  - jaadjnlkjnhohljficgoddcjmndjfdmi # Blank Tab
+  - ldpochfccmkkmhdbclfhpagapcfdljkj # Decentraleyes
 
 # https://chromeenterprise.google/policies/
 chrome: &chrome
@@ -62,20 +68,37 @@ chrome: &chrome
 
 # https://support.brave.com/hc/en-us/articles/360039248271-Group-Policy
 brave: &brave
-  <<: *chrome
-  BraveAIChatEnabled: false
-  BraveNewsDisabled: true # brave 1.82
-  BraveP3AEnabled: false # brave 1.83
-  BraveRewardsDisabled: true
-  BraveSpeedreaderEnabled: false # brave 1.82
-  BraveStatsPingEnabled: false # brave 1.83
-  BraveSyncUrl: ""
-  BraveTalkDisabled: true # brave 1.82
-  BraveVPNDisabled: true
-  BraveWalletDisabled: true
-  BraveWaybackMachineEnabled: false # brave 1.82
-  BraveWebDiscoveryEnabled: false # brave 1.83
-  TorDisabled: true
+  <<: *chromeExtensions
+  
+  BraveAIChatEnabled: false          # Disable Brave Leo AI
+  BraveNewsDisabled: true            # Disable Brave News
+  BraveP3AEnabled: false             # Disable Product Analytics
+  BraveRewardsDisabled: true         # Disable Brave Rewards
+  BraveSpeedreaderEnabled: false     # Disable Speedreader
+  BraveStatsPingEnabled: false       # Disable stats ping telemetry
+  BraveSyncUrl: ""                   # Disable Brave Sync
+  BraveTalkDisabled: true            # Disable Brave Talk
+  BraveVPNDisabled: true             # Disable Brave VPN
+  BraveWalletDisabled: true          # Disable Brave Wallet (Web3)
+  BraveWaybackMachineEnabled: false  # Disable Wayback Machine integration
+  BraveWebDiscoveryEnabled: false    # Disable Web Discovery Project
+  TorDisabled: true                  # Disable Tor
+  
+  DefaultGeolocationSetting: 2       # Block geolocation
+  DefaultNotificationsSetting: 2     # Block notifications
+  DefaultSensorsSetting: 2           # Block sensors
+  PasswordManagerEnabled: false      # Disable password manager
+  AutofillCreditCardEnabled: false   # Disable credit card autofill
+  BackgroundModeEnabled: false       # Disable background mode
+  BrowserGuestModeEnabled: false     # Disable guest mode
+  BrowserSignin: 0                   # Disable browser signin
+  MetricsReportingEnabled: false     # Disable metrics (may be ignored)
+  SafeBrowsingExtendedReportingEnabled: false  # Disable safe browsing reporting
+  SyncDisabled: true                 # Disable sync
+  ShoppingListEnabled: false         # Disable shopping list
+  PasswordLeakDetectionEnabled: false  # Disable password leak detection
+  PasswordSharingEnabled: false      # Disable password sharing
+  RelatedWebsiteSetsEnabled: false   # Disable related website sets
 
 # https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies
 edge: &edge
@@ -104,8 +127,6 @@ edge: &edge
   ControlDefaultStateOfAllowExtensionFromOtherStoresSettingEnabled: true
   BlockExternalExtensions: false
   ExtensionInstallForcelist:
-  - odfafepnkmbhccpbejgmiehpchacaeak # uBlock Origin; Edge Web Store
-  - djkjpnciiommncecmdefpdllknjdmmmo # Cookie AutoDelete; Edge Web Store
   - kkacdgacpkediooahopgcbdahlpipheh # I still don't care about cookies; Edge Web Store
   - ihknoknoahjhldmpdoajjdkfjhddgpcd # Blank Tab; Edge Web Store
   # Games

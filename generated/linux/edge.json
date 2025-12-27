@@ -8,8 +8,6 @@
   "ControlDefaultStateOfAllowExtensionFromOtherStoresSettingEnabled": true,
   "BlockExternalExtensions": false,
   "ExtensionInstallForcelist": [
-    "odfafepnkmbhccpbejgmiehpchacaeak",
-    "djkjpnciiommncecmdefpdllknjdmmmo",
     "kkacdgacpkediooahopgcbdahlpipheh",
     "ihknoknoahjhldmpdoajjdkfjhddgpcd"
   ],
