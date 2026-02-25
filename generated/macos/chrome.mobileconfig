@@ -101,20 +101,33 @@
 			<false/>
 			<key>ParcelTrackingEnabled</key>
 			<false/>
-			<key>RelatedWebsiteSetsEnabled</key>
-			<false/>
 			<key>ShoppingListEnabled</key>
 			<false/>
 			<key>SyncDisabled</key>
 			<true/>
-			<key>ExtensionManifestV2Availability</key>
+			<key>GenAiDefaultSettings</key>
 			<integer>2</integer>
+			<key>DevToolsGenAiSettings</key>
+			<integer>2</integer>
+			<key>TabOrganizerSettings</key>
+			<integer>2</integer>
+			<key>CreateThemesSettings</key>
+			<integer>2</integer>
+			<key>HelpMeWriteSettings</key>
+			<integer>2</integer>
+			<key>AutofillAddressEnabled</key>
+			<false/>
+			<key>PrivacySandboxPromptEnabled</key>
+			<false/>
 			<key>ExtensionInstallForcelist</key>
 			<array>
 				<string>nkgllhigpcljnhoakjkgaieabnkmgdkb</string>
 				<string>edibdbjcniadpccecjdfdjjppcpchdlm</string>
 				<string>mnjggcdmjocbbbhaepdhchncahnbgone</string>
 				<string>ldpochfccmkkmhdbclfhpagapcfdljkj</string>
+				<string>dhdgffkkebhmkfjojejmpbldmpobfkfo</string>
+				<string>beakmhbijpdhipnjhnclmhgjlddhidpe</string>
+				<string>cnjifjpddelmedmihgijeibhnjfabmlf</string>
 			</array>
 		</dict>
 	</array>

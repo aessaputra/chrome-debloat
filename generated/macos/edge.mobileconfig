@@ -50,24 +50,29 @@
 			<key>ExtensionInstallForcelist</key>
 			<array>
 				<string>kkacdgacpkediooahopgcbdahlpipheh</string>
+				<string>iikmkjmpaadaobahmlepeloendndfphd</string>
+				<string>beakmhbijpdhipnjhnclmhgjlddhidpe</string>
+				<string>eigdjhmgnaaeaonimdklocfekkaanfme</string>
 			</array>
 			<key>GamerModeEnabled</key>
 			<false/>
 			<key>GenAILocalFoundationalModelSettings</key>
 			<integer>1</integer>
-			<key>ImplicitSignInEnabled</key>
+			<key>CopilotPageContext</key>
 			<false/>
-			<key>LinkedAccountEnabled</key>
+			<key>EdgeEntraCopilotPageContext</key>
+			<false/>
+			<key>Microsoft365CopilotChatIconEnabled</key>
+			<false/>
+			<key>ShareBrowsingHistoryWithCopilotSearchAllowed</key>
+			<false/>
+			<key>ImplicitSignInEnabled</key>
 			<false/>
 			<key>ProactiveAuthWorkflowEnabled</key>
 			<false/>
 			<key>SeamlessWebToBrowserSignInEnabled</key>
 			<false/>
 			<key>WebToBrowserSignInEnabled</key>
-			<false/>
-			<key>ImmersiveReaderGrammarToolsEnabled</key>
-			<false/>
-			<key>ImmersiveReaderPictureDictionaryEnabled</key>
 			<false/>
 			<key>EdgeManagementEnabled</key>
 			<false/>
@@ -92,8 +97,6 @@
 			<key>PinBrowserEssentialsToolbarButton</key>
 			<false/>
 			<key>StartupBoostEnabled</key>
-			<false/>
-			<key>RelatedWebsiteSetsEnabled</key>
 			<false/>
 			<key>ScarewareBlockerProtectionEnabled</key>
 			<false/>
@@ -125,8 +128,6 @@
 			<false/>
 			<key>AccessibilityImageLabelsEnabled</key>
 			<false/>
-			<key>AddressBarMicrosoftSearchInBingProviderEnabled</key>
-			<false/>
 			<key>AIGenThemesEnabled</key>
 			<false/>
 			<key>AllowGamesMenu</key>
@@ -147,8 +148,6 @@
 			<false/>
 			<key>ConfigureDoNotTrack</key>
 			<true/>
-			<key>CryptoWalletEnabled</key>
-			<false/>
 			<key>DiagnosticData</key>
 			<integer>0</integer>
 			<key>Edge3PSerpTelemetryEnabled</key>
@@ -157,13 +156,7 @@
 			<false/>
 			<key>EdgeCollectionsEnabled</key>
 			<false/>
-			<key>EdgeDiscoverEnabled</key>
-			<false/>
 			<key>EdgeEDropEnabled</key>
-			<false/>
-			<key>EdgeEnhanceImagesEnabled</key>
-			<false/>
-			<key>EdgeFollowEnabled</key>
 			<false/>
 			<key>EdgeHistoryAISearchEnabled</key>
 			<false/>
@@ -181,8 +174,6 @@
 			<true/>
 			<key>HubsSidebarEnabled</key>
 			<false/>
-			<key>ImageEditorServiceEnabled</key>
-			<false/>
 			<key>InAppSupportEnabled</key>
 			<false/>
 			<key>InternetExplorerIntegrationLevel</key>
@@ -192,8 +183,6 @@
 			<key>LiveTranslationAllowed</key>
 			<false/>
 			<key>LocalProvidersEnabled</key>
-			<false/>
-			<key>MathSolverEnabled</key>
 			<false/>
 			<key>MicrosoftEdgeInsiderPromotionEnabled</key>
 			<false/>
@@ -214,10 +203,6 @@
 			<key>PersonalizeTopSitesInCustomizeSidebarEnabled</key>
 			<false/>
 			<key>PictureInPictureOverlayEnabled</key>
-			<false/>
-			<key>ProactiveAuthEnabled</key>
-			<false/>
-			<key>PromotionalTabsEnabled</key>
 			<false/>
 			<key>PromptForDownloadLocation</key>
 			<false/>
@@ -249,8 +234,6 @@
 			<false/>
 			<key>TranslateEnabled</key>
 			<true/>
-			<key>TravelAssistanceEnabled</key>
-			<false/>
 			<key>UploadFromPhoneEnabled</key>
 			<false/>
 			<key>UrlDiagnosticDataEnabled</key>
@@ -260,8 +243,6 @@
 			<key>VisualSearchEnabled</key>
 			<false/>
 			<key>WalletDonationEnabled</key>
-			<false/>
-			<key>WebWidgetAllowed</key>
 			<false/>
 			<key>DefaultGeolocationSetting</key>
 			<integer>2</integer>
@@ -329,8 +310,20 @@
 			<false/>
 			<key>SyncDisabled</key>
 			<true/>
-			<key>ExtensionManifestV2Availability</key>
+			<key>GenAiDefaultSettings</key>
 			<integer>2</integer>
+			<key>DevToolsGenAiSettings</key>
+			<integer>2</integer>
+			<key>TabOrganizerSettings</key>
+			<integer>2</integer>
+			<key>CreateThemesSettings</key>
+			<integer>2</integer>
+			<key>HelpMeWriteSettings</key>
+			<integer>2</integer>
+			<key>AutofillAddressEnabled</key>
+			<false/>
+			<key>PrivacySandboxPromptEnabled</key>
+			<false/>
 		</dict>
 	</array>
 </dict>

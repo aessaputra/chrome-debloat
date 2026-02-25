@@ -26,12 +26,13 @@
   "ShoppingListEnabled": false,
   "PasswordLeakDetectionEnabled": false,
   "PasswordSharingEnabled": false,
-  "RelatedWebsiteSetsEnabled": false,
-  "ExtensionManifestV2Availability": 2,
   "ExtensionInstallForcelist": [
     "nkgllhigpcljnhoakjkgaieabnkmgdkb",
     "edibdbjcniadpccecjdfdjjppcpchdlm",
     "mnjggcdmjocbbbhaepdhchncahnbgone",
-    "ldpochfccmkkmhdbclfhpagapcfdljkj"
+    "ldpochfccmkkmhdbclfhpagapcfdljkj",
+    "dhdgffkkebhmkfjojejmpbldmpobfkfo",
+    "beakmhbijpdhipnjhnclmhgjlddhidpe",
+    "cnjifjpddelmedmihgijeibhnjfabmlf"
   ]
 }

@@ -85,16 +85,15 @@
 			<false/>
 			<key>PasswordSharingEnabled</key>
 			<false/>
-			<key>RelatedWebsiteSetsEnabled</key>
-			<false/>
-			<key>ExtensionManifestV2Availability</key>
-			<integer>2</integer>
 			<key>ExtensionInstallForcelist</key>
 			<array>
 				<string>nkgllhigpcljnhoakjkgaieabnkmgdkb</string>
 				<string>edibdbjcniadpccecjdfdjjppcpchdlm</string>
 				<string>mnjggcdmjocbbbhaepdhchncahnbgone</string>
 				<string>ldpochfccmkkmhdbclfhpagapcfdljkj</string>
+				<string>dhdgffkkebhmkfjojejmpbldmpobfkfo</string>
+				<string>beakmhbijpdhipnjhnclmhgjlddhidpe</string>
+				<string>cnjifjpddelmedmihgijeibhnjfabmlf</string>
 			</array>
 		</dict>
 	</array>

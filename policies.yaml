@@ -1,10 +1,12 @@
 chromeExtensions: &chromeExtensions
-  ExtensionManifestV2Availability: 2
   ExtensionInstallForcelist:
   - nkgllhigpcljnhoakjkgaieabnkmgdkb # Don't f*** with paste; Chrome Web Store
   - edibdbjcniadpccecjdfdjjppcpchdlm # I still don't care about cookies; Chrome Web Store
   - mnjggcdmjocbbbhaepdhchncahnbgone # SponsorBlock; Chrome Web Store
   - ldpochfccmkkmhdbclfhpagapcfdljkj # Decentraleyes; Chrome Web Store
+  - dhdgffkkebhmkfjojejmpbldmpobfkfo # Tampermonkey; Chrome Web Store
+  - beakmhbijpdhipnjhnclmhgjlddhidpe # linkding extension; Chrome Web Store
+  - cnjifjpddelmedmihgijeibhnjfabmlf # Obsidian Web Clipper; Chrome Web Store
 
 # Brave extensions
 braveExtensions: &braveExtensions
@@ -13,6 +15,9 @@ braveExtensions: &braveExtensions
   - edibdbjcniadpccecjdfdjjppcpchdlm # I still don't care about cookies
   - mnjggcdmjocbbbhaepdhchncahnbgone # SponsorBlock
   - ldpochfccmkkmhdbclfhpagapcfdljkj # Decentraleyes
+  - dhdgffkkebhmkfjojejmpbldmpobfkfo # Tampermonkey
+  - beakmhbijpdhipnjhnclmhgjlddhidpe # linkding extension
+  - cnjifjpddelmedmihgijeibhnjfabmlf # Obsidian Web Clipper
 
 # https://chromeenterprise.google/policies/
 chrome: &chrome
@@ -60,9 +65,18 @@ chrome: &chrome
   DefaultBrowserSettingEnabled: false
   MetricsReportingEnabled: false
   ParcelTrackingEnabled: false
-  RelatedWebsiteSetsEnabled: false
+
   ShoppingListEnabled: false
   SyncDisabled: true
+  # Generative AI
+  GenAiDefaultSettings: 2
+  DevToolsGenAiSettings: 2
+  TabOrganizerSettings: 2
+  CreateThemesSettings: 2
+  HelpMeWriteSettings: 2
+  # Privacy
+  AutofillAddressEnabled: false
+  PrivacySandboxPromptEnabled: false
 
 # https://support.brave.com/hc/en-us/articles/360039248271-Group-Policy
 brave: &brave
@@ -96,7 +110,7 @@ brave: &brave
   ShoppingListEnabled: false         # Disable shopping list
   PasswordLeakDetectionEnabled: false  # Disable password leak detection
   PasswordSharingEnabled: false      # Disable password sharing
-  RelatedWebsiteSetsEnabled: false   # Disable related website sets
+
 
 # https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies
 edge: &edge
@@ -126,23 +140,28 @@ edge: &edge
   BlockExternalExtensions: false
   ExtensionInstallForcelist:
   - kkacdgacpkediooahopgcbdahlpipheh # I still don't care about cookies; Edge Web Store
+  - iikmkjmpaadaobahmlepeloendndfphd # Tampermonkey; Edge Add-ons
+  - beakmhbijpdhipnjhnclmhgjlddhidpe # linkding extension; Chrome Web Store
+  - eigdjhmgnaaeaonimdklocfekkaanfme # Obsidian Web Clipper; Edge Add-ons
   # Games
   GamerModeEnabled: false
   # Generative AI
   GenAILocalFoundationalModelSettings: 1
+  # Copilot
+  CopilotPageContext: false
+  EdgeEntraCopilotPageContext: false
+  Microsoft365CopilotChatIconEnabled: false
+  ShareBrowsingHistoryWithCopilotSearchAllowed: false
   # HTTP Auth
   # -
   # Identity & SignIn
   ImplicitSignInEnabled: false
-  LinkedAccountEnabled: false # OBSOLETE
   ProactiveAuthWorkflowEnabled: false
   SeamlessWebToBrowserSignInEnabled: false
   WebToBrowserSignInEnabled: false
   # Idle Browser Actions
   # -
   # Immersive Reader
-  ImmersiveReaderGrammarToolsEnabled: false # OBSOLETE
-  ImmersiveReaderPictureDictionaryEnabled: false # OBSOLETE
   # Kiosk Mode
   # -
   # Manageability
@@ -177,7 +196,7 @@ edge: &edge
   # Proxy Server
   # -
   # Related Website Sets
-  RelatedWebsiteSetsEnabled: false
+
   # Scareware Blocker
   ScarewareBlockerProtectionEnabled: false
   # SmartScreen settings
@@ -203,7 +222,6 @@ edge: &edge
   # Additional
   AADWebSiteSSOUsingThisProfileEnabled: false
   AccessibilityImageLabelsEnabled: false
-  AddressBarMicrosoftSearchInBingProviderEnabled: false # OBSOLETE
   AIGenThemesEnabled: false
   AllowGamesMenu: false
   AlternateErrorPagesEnabled: false
@@ -214,15 +232,11 @@ edge: &edge
   BrowserSignin: 0
   ComposeInlineEnabled: false
   ConfigureDoNotTrack: true
-  CryptoWalletEnabled: false # OBSOLETE
   DiagnosticData: 0
   Edge3PSerpTelemetryEnabled: false
   EdgeAssetDeliveryServiceEnabled: false
   EdgeCollectionsEnabled: false
-  EdgeDiscoverEnabled: false # OBSOLETE
   EdgeEDropEnabled: false
-  EdgeEnhanceImagesEnabled: false # OBSOLETE
-  EdgeFollowEnabled: false # OBSOLETE
   EdgeHistoryAISearchEnabled: false
   EdgeShoppingAssistantEnabled: false
   EdgeWalletCheckoutEnabled: false
@@ -231,13 +245,11 @@ edge: &edge
   ForceSync: false
   HttpsUpgradesEnabled: true
   HubsSidebarEnabled: false
-  ImageEditorServiceEnabled: false # OBSOLETE
   InAppSupportEnabled: false
   InternetExplorerIntegrationLevel: 0
   LiveCaptionsAllowed: false
   LiveTranslationAllowed: false
   LocalProvidersEnabled: false
-  MathSolverEnabled: false # OBSOLETE
   MicrosoftEdgeInsiderPromotionEnabled: false
   MicrosoftEditorProofingEnabled: false
   MicrosoftEditorSynonymsEnabled: false
@@ -248,8 +260,6 @@ edge: &edge
   PersonalizationReportingEnabled: false
   PersonalizeTopSitesInCustomizeSidebarEnabled: false
   PictureInPictureOverlayEnabled: false
-  ProactiveAuthEnabled: false # OBSOLETE
-  PromotionalTabsEnabled: false # DEPRECATED
   PromptForDownloadLocation: false # improved QoL
   ReadAloudEnabled: false
   ResolveNavigationErrorsUseWebService: false
@@ -265,10 +275,8 @@ edge: &edge
   TabServiceEnabled: false
   TextPredictionEnabled: false
   TranslateEnabled: true # improved QoL
-  TravelAssistanceEnabled: false # OBSOLETE
   UploadFromPhoneEnabled: false
   UrlDiagnosticDataEnabled: false
   UserFeedbackAllowed: false
   VisualSearchEnabled: false
   WalletDonationEnabled: false
-  WebWidgetAllowed: false # DEPRECATED
