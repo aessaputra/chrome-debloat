@@ -73,8 +73,6 @@
 			<false/>
 			<key>BrowserSignin</key>
 			<integer>0</integer>
-			<key>MetricsReportingEnabled</key>
-			<false/>
 			<key>SafeBrowsingExtendedReportingEnabled</key>
 			<false/>
 			<key>SyncDisabled</key>

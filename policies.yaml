@@ -28,33 +28,17 @@ chrome: &chrome
   DefaultLocalFontsSetting: 2
   DefaultSensorsSetting: 2
   DefaultSerialGuardSetting: 2
-  # Cloud Reporting
-  CloudReportingEnabled: false
-  # Drive
-  DriveDisabled: true
+
   # Password
   PasswordManagerEnabled: false
   PasswordSharingEnabled: false
   PasswordLeakDetectionEnabled: false
-  # Quick Answers
-  QuickAnswersEnabled: false
+
   # Safe Browsing
   SafeBrowsingExtendedReportingEnabled: false
   SafeBrowsingSurveysEnabled: false
   SafeBrowsingDeepScanningEnabled: false
-  # User and device reporting
-  DeviceActivityHeartbeatEnabled: false
-  DeviceMetricsReportingEnabled: false
-  HeartbeatEnabled: false
-  LogUploadEnabled: false
-  ReportAppInventory:
-  - ""
-  ReportDeviceActivityTimes: false
-  ReportDeviceAppInfo: false
-  ReportDeviceSystemInfo: false
-  ReportDeviceUsers: false
-  ReportWebsiteTelemetry:
-  - ""
+
   # Miscellaneous
   AlternateErrorPagesEnabled: false
   AutofillCreditCardEnabled: false
@@ -63,15 +47,12 @@ chrome: &chrome
   BrowserSignin: 0
   BuiltInDnsClientEnabled: false
   DefaultBrowserSettingEnabled: false
-  MetricsReportingEnabled: false
-  ParcelTrackingEnabled: false
+
 
   ShoppingListEnabled: false
   SyncDisabled: true
   # Generative AI
-  GenAiDefaultSettings: 2
   DevToolsGenAiSettings: 2
-  TabOrganizerSettings: 2
   CreateThemesSettings: 2
   HelpMeWriteSettings: 2
   # Privacy
@@ -104,7 +85,7 @@ brave: &brave
   BackgroundModeEnabled: false       # Disable background mode
   BrowserGuestModeEnabled: false     # Disable guest mode
   BrowserSignin: 0                   # Disable browser signin
-  MetricsReportingEnabled: false     # Disable metrics (may be ignored)
+
   SafeBrowsingExtendedReportingEnabled: false  # Disable safe browsing reporting
   SyncDisabled: true                 # Disable sync
   ShoppingListEnabled: false         # Disable shopping list

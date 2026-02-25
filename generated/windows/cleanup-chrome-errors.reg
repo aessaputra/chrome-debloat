@@ -1,0 +1,30 @@
+Windows Registry Editor Version 5.00
+
+; Cleanup: Remove ChromeOS-only policies (not valid on Windows Chrome desktop)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome]
+"DeviceActivityHeartbeatEnabled"=-
+"DeviceMetricsReportingEnabled"=-
+"DriveDisabled"=-
+"HeartbeatEnabled"=-
+"LogUploadEnabled"=-
+"QuickAnswersEnabled"=-
+"ReportAppInventory"=-
+"ReportDeviceActivityTimes"=-
+"ReportDeviceAppInfo"=-
+"ReportDeviceSystemInfo"=-
+"ReportDeviceUsers"=-
+"ReportWebsiteTelemetry"=-
+"ParcelTrackingEnabled"=-
+
+; Cleanup: Remove deprecated/Admin Console-only policies
+"CloudReportingEnabled"=-
+"GenAiDefaultSettings"=-
+"TabOrganizerSettings"=-
+"RelatedWebsiteSetsEnabled"=-
+
+; Cleanup: Remove MetricsReportingEnabled (only works via cloud management)
+"MetricsReportingEnabled"=-
+
+; Cleanup: Remove MetricsReportingEnabled from Brave too
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\BraveSoftware\Brave]
+"MetricsReportingEnabled"=-
